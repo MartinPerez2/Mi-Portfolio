@@ -1,6 +1,6 @@
 import React from "react";
 import {HiArrowNarrowRight} from 'react-icons/hi'
-import { Link } from 'react-scroll';
+import MartinCv from'../assets/img/martincv.pdf';
 
 const Home = () =>{
     return (
@@ -18,12 +18,14 @@ const Home = () =>{
                      Back-end para finalmente poder proyectarme como desarrollador 
                      Full-stack.</p>
             <div>
-                <Link to="work" smooth={true} duration={500}>
+                <a 
+              href={MartinCv}
+              download="Martin Cv">
                 <button
-                className="text-gray-300 border-2 py-2 px-3 my-2 rounded-r-2xl flex items-center hover:bg-red-500 hover:border-red-300">
-                Mira mis trabajos <HiArrowNarrowRight className="ml-3 hover:rotate-90 duration-300"/>
+                className="hover:scale-110 shadow-md shadow-[#040c16] text-gray-300 border-2 py-2 px-3 my-2 rounded-r-2xl flex items-center hover:bg-red-500 hover:border-red-300">
+                Descargar CV<HiArrowNarrowRight className="ml-3 hover:rotate-90 duration-300"/>
                  </button>
-                </Link>
+                </a>
             </div>
             </div>
 

@@ -19,7 +19,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-gray-900/60 text-gray-300 shadow-sm'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-gray-800/50 text-gray-300 shadow-sm'>
       <div>
         <img src={Logo} alt='Logo Image' style={{ width: '70px' }} />
       </div>
@@ -63,7 +63,7 @@ const Navbar = () => {
         className={
           !nav
             ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
+            : 'absolute top-0 left-0 w-full h-screen bg-gray-800 flex flex-col justify-center items-center'
         }
       >
         <li className='py-6 text-4xl hover:text-red-500'>
@@ -100,25 +100,27 @@ const Navbar = () => {
       {/* Social icons */}
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
-          <li className='w-[160px] h-[60px] hover:text-red-500 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 '>
+          <li className='w-[160px] h-[60px]  flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 '>
             <a
-              className='flex justify-between items-center w-full text-gray-300'
+              className='flex justify-between items-center w-full text-gray-300 hover:text-red-500'
               href='https://www.linkedin.com/in/mart%C3%ADn-p%C3%A9rez-30a46b1b6/'
+              target="_blank"
             >
               Linkedin <FaLinkedin size={40} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 hover:text-red-500'>
             <a
-              className='flex justify-between items-center w-full text-gray-300'
+              className='flex justify-between items-center w-full text-gray-300 hover:text-red-500'
               href='https://github.com/MartinPerez2'
+              target="_blank"
             >
               Github <FaGithub size={40} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 hover:text-red-500'>
             <Link
-              className='flex justify-between items-center w-full text-gray-300 '
+              className='flex justify-between items-center w-full text-gray-300 hover:text-red-500'
               to='contact' smooth= {true} duration={500}
             >
               Email <HiOutlineMail size={40} />
@@ -126,7 +128,7 @@ const Navbar = () => {
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 hover:text-red-500'>
             <a
-              className='flex justify-between items-center w-full text-gray-300'
+              className='flex justify-between items-center w-full text-gray-300 hover:text-red-500'
               href={MartinCv}
               download="Martin Cv"
             >

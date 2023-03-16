@@ -8,9 +8,9 @@ const Contact = () => {
                 <p className='text-4xl font-bold inline border-b-4 border-red-500 text-gray-300'>Contacto</p>
                 <p className='text-gray-300 py-4'>Envíe el formulario a continuación o envíeme un correo electrónico: tinchoperez@gmail.com</p>
             </div>
-            <input className='bg-[#ccd6f6] p-2 rounded-2xl' type="text" placeholder='Nombre' name='name' />
-            <input className='my-4 p-2 bg-[#ccd6f6] rounded-2xl' type="email" placeholder='Email' name='email' />
-            <textarea className='bg-[#ccd6f6] p-2 rounded-2xl' name="message" rows="10" placeholder='Mensaje'></textarea>
+            <input className=' focus:outline-none focus:ring-2 focus:ring-black-300 focus:border-transparent bg-[#ccd6f6] p-2 rounded-2xl' type="text" placeholder='Nombre' name='name' />
+            <input className=' focus:outline-none focus:ring-2 focus:ring-black-300 focus:border-transparent my-4 p-2 bg-[#ccd6f6] rounded-2xl' type="email" placeholder='Email' name='email' />
+            <textarea className=' focus:outline-none focus:ring-2 focus:ring-black-300 focus:border-transparent bg-[#ccd6f6] p-2 rounded-2xl' name="message" rows="10" placeholder='Mensaje'></textarea>
             <button className='text-white border-2 hover:bg-red-500 hover:border-red-500 px-4 py-3 my-8 mx-auto flex items-center rounded-2xl'>Contactame</button>
         </form>
     </div>

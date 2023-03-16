@@ -13,8 +13,8 @@ export const data=[
         id:2,
         name:"Mi Portfolio",
         image: MiPortfolio ,
-        github:"",
-        live:"",
+        github:"https://github.com/MartinPerez2/Mi-Portfolio",
+        live:"martinperez-portfolio.netlify.app/",
     },
    
 
